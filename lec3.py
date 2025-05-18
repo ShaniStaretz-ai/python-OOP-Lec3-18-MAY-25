@@ -13,8 +13,13 @@ if __name__ == '__main__':
     s1=Student("shani",22,87,37,"kfarSava")
     s2=Student("shani2",22,87,37,"kfarSava")
     s3 = Student("shani3", 22, 87, 37, "Kfar Sava")
-    c1= Course()
+    c1= Course("c1",2)
     print(c1)
+    c1.add_student(s1)
+    c1.add_student(s2)
+    c1.add_student(s3)
+    print(c1)
+    c1.print_students_list()
 
 
 
